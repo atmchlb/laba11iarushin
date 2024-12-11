@@ -1,0 +1,123 @@
+.div-Pizzacard{
+    display:flex;
+    flex-direction:column;
+    max-width: 15%;
+    justify-content: center;
+    border:solid 1px darkgrey;
+    border-radius: 3%;
+    margin:1%;
+    overflow:hidden;
+}
+
+.h3-Pizzacard{
+    font-weight: bold;
+    padding:0 10%;
+    margin:0;
+    
+}
+.p-Pizzacard{
+    color:darkgray;
+    font-size: 70%;
+    margin:0;
+    padding:0 10%;
+}
+
+
+.image-container-pizzacard{
+    position: relative;
+    
+}
+.img-Pizzacard{
+    width:100%;
+    
+}
+.mark-Pizzacard{
+    display:block;
+    position:absolute;
+    background-color: #FF6A39;
+    color:white;
+    z-index: inherit+1;
+    left:0;
+    top:10%;
+    text-align: center;
+    padding: 3% 5%;
+    font-size:70%;
+}
+.counter-show-Pizzacard{
+    display: block;
+    border: solid 1px darkgray;
+    padding: 0 5%;
+    width: 25%;
+    text-align: center;
+}
+.plus-button-Pizzacard,
+.minus-button-Pizzacard {
+    display: block;
+    align-self: stretch;
+    border: 1px solid darkgray;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.plus-button-Pizzacard:hover,
+.minus-button-Pizzacard:hover {
+    background-color: #f0f0f0;
+}
+
+.plus-button-Pizzacard:active,
+.minus-button-Pizzacard:active {
+    transform: scale(0.95);
+}
+
+.minus-button-Pizzacard {
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+}
+
+.plus-button-Pizzacard {
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+}
+.pizza-count-Pizzacard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin:2% 0;
+    margin-left:10%;
+    align-self: stretch;
+    margin-bottom:5%;
+}
+.size-select-Pizzacard{
+    display: block;
+    width:50%;
+    padding: 3% 5%;
+    margin-left:10%;
+    margin-top:10%;
+    font-size:70%;
+    color:darkgray;
+    border-radius: 5px;
+}
+.price-display-Pizzacard{
+    margin:1% 0;
+    margin-left:10%;
+    padding: 0;
+    font-size:130%;
+}
+.add-to-cart-Pizzacard{
+    width: 25%;
+    border-radius: 5px;
+    border:1px;
+    align-self: stretch;
+    margin-left:2%;
+    background-image: url("./images/Pizzacard_images/cart.png");
+    background-position: center center;
+}
+.add-to-cart-button-Pizzacard:hover {
+    background-color: #FF8551;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-button-Pizzacard:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
